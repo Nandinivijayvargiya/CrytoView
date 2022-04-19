@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Detail | CryptoView
+        </title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="./detail.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Bebas+Neue&family=Crete+Round&family=Lato:wght@700&family=Nunito+Sans:wght@300&family=Oswald&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Aleo&family=Bebas+Neue&family=Crete+Round&family=Hammersmith+One&family=Lato:wght@700&family=Nunito+Sans:wght@300&family=Oswald&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="flex_container">
+            <div class="flex_container">
+                <img src="./images/icon_crypto.png" alt="logo" class="logo"/>
+                <h1>CryptoView</h1>
+            </div>
+            <div class="flex_container search_bar">
+                <a href="./search.html" class="search_btn">Search</a>
+            </div>
+        </nav>
+
+    <section class="description_price flex_container">
+        <div class="description flex_container">
+            <img src=" " id="coin_image" alt="Coin Image">
+            <div class="w_40">
+                <h1 id="coin_name"></h1>
+                <p class="text_justify" id="coin_info"></p>
+        </div>
+    </div>
+
+        <div class="price">
+            <table class="mt_1_25">
+                <tbody>
+                    <tr>
+                        <td>
+                          INR  
+                        </td>
+                        <td>
+                            <span id="inr_prices"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          USD 
+                        </td>
+                        <td>
+                            <span id="usd_prices"></span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                          EUR  
+                        </td>
+                        <td>
+                            <span id="eur_prices"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="historical mt_2">
+        <canvas id="myChart"></canvas>
+    </section>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+
+        <footer>
+            <script src="https://kit.fontawesome.com/db96e9afc4.js" crossorigin="anonymous"></script>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <p>Copyright &copy; Nandini Vijayvargiya</p>
+        </footer>
+        <script src="./detail.js"></script>
+    </body>
+</html>

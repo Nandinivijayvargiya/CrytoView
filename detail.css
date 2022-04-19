@@ -1,0 +1,188 @@
+body
+{
+    margin:0px;
+    background-color: #343434;
+}
+h1,h2,h3,h4,h5,h6,p
+{
+    margin:0px;
+}
+nav
+{
+    height:5rem;
+    background-color: #000000;
+    color: white; 
+    padding: 0.25rem 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    width: 3rem;
+    height: 3rem;
+}
+nav h1
+{
+    margin: 0.65rem 0.1rem;
+    text-shadow: 4px 4px 10px white;
+}
+nav input
+{
+  width:20rem;
+  height: 1.75rem;
+  border-radius: 5rem;
+  background-color: #7a7a7a;
+  color: white;
+  font-weight: bolder;
+  padding: 0.1rem 0.7rem;
+  border:1px solid white;
+}
+nav a
+{
+    text-decoration: none;
+    color: #73d2de;
+    border: 2px solid #73d2de;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+    font-weight: bolder;
+    transition: 2s all;
+}
+nav a:hover
+{
+    background-color: #216869;
+    height: 1.2rem;
+   
+}
+@keyframes background-fade {
+    0%{
+        background:black;
+    }
+    100% {
+        background:#216869;
+    }
+}
+.flex_container
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.description_price
+{
+    justify-content: space-around;
+    padding-top:2rem;
+    background-color: #232323;
+    color:white;
+}
+.description
+{
+    align-items: flex-start;
+    gap:2rem;
+    font-family: 'Aleo', serif;
+}
+.description h1
+{
+    font-size: xx-large;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    text-shadow: 4px 4px 5px #73d2de;
+}
+.description p
+{
+   margin-top:1rem;
+   font-size: 1.1rem;
+   line-height: 1.7rem;
+   padding-bottom: 1rem;
+}
+.description>img
+{
+    margin-top: 4rem;
+    margin-right: 4rem;
+    width: 10vw;
+}
+.text_justify
+{
+    text-align: justify;
+}
+.price>table
+{
+    margin-top: 4rem;
+    background-color: #002855;
+    border-spacing: 0;
+    padding:1rem 1rem;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 20px;
+}
+table tbody td
+{
+    border-bottom: 1px solid white;
+    padding: 1rem 1rem;
+    
+}
+.w_40
+{
+    width: 40vw;
+}
+.historical
+{
+    position: relative;
+    width: 50vw;
+    height: 27rem;
+    margin: auto;
+    background-color: #dce1de;
+}
+.mt_1_25
+{
+    margin: 1.25rem;
+}
+.mt_2
+{
+    margin-top: 5rem;
+}
+footer
+{
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f6f5;
+    margin-top: 1rem;
+}
+footer>i
+{
+    margin-left: 1rem;
+}
+footer>p
+{
+    margin-top: 1rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+@media screen and (max-width:650px)
+{
+    .description>img
+    {
+        display: none;
+    }
+    .description p
+    {
+       width: 75vw;
+       text-align: left;
+    }
+    .description h1
+    {
+        margin-left:5rem ;
+    }
+    .price>table
+    {
+        display: none;
+    }
+    .historical
+    {
+        width: 100vw;
+        overflow-x: scroll;
+        height: 16rem;
+    }
+}
